@@ -130,10 +130,13 @@ nav{
         height: 60vh;
         background-position-x: -400px;
     }
-    .hero h2 {
+    .hero h3 {
         font-size: 1.25rem;
         width: 60vw;
         margin-bottom: 0;
+    }
+    .right-justify{
+        margin-right: 0.1rem !important;
     }
 }
 .hero__logo{
@@ -165,6 +168,7 @@ nav{
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
+        width: 100vw;
     }
     .responsive-reverse{
         -webkit-box-orient: vertical;
@@ -188,8 +192,8 @@ nav{
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    -ms-flex-preferred-size: 400px;
-    flex-basis: 400px;
+    -ms-flex-preferred-size: 450px;
+    flex-basis: 450px;
     -webkit-box-flex:1;
     -ms-flex:1;
     flex:1;
@@ -200,7 +204,10 @@ nav{
     -ms-flex-align: center;
     align-items: center;
     padding: 0 2rem 0 2rem;
-
+}
+.col h3 {
+    align-self: stretch;
+    text-align: center;
 }
 .half-width{
     width: 50%;
@@ -223,7 +230,7 @@ nav{
 }
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active), (max-width: 500px) {
     .col {
-        width: 80%;
+        width: 90%;
         margin: 0 auto;
     }
 }
@@ -369,4 +376,14 @@ footer{
 .larger{
     font-size: 1.15rem;
     line-height: 2rem;
+}
+.orange-text{
+    color: #FF7D00;
+}
+.small-icon{
+    position:absolute;
+    width: 6vw;
+    max-width: 20px;
+    margin-left: 1rem;
+    margin-top: 4px;
 }
